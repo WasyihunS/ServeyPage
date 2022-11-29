@@ -5,10 +5,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Servey Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
     <script src='main.js'></script>
 </head>
 <body>
+    <div class="container">
     <h1 id="title">Microverse Servey Page</h1>
     <p id="description">This sevey form helps to gather information </p>
     <form id="survey-form">
@@ -18,7 +20,7 @@
         <label id="email-label">email</label>
         <input id="email" type="email" placeholder="example@gmail.com" required />
         <label id="number-label">Age</label>
-        <input id="age" type="number"  min="" max="120" placeholder="Your Age" required  />
+        <input id="number" type="number"  min="18" max="120" placeholder="Your Age" required  />
         </div>
         <div class="form-group">
         <select id="dropdown">
@@ -37,13 +39,13 @@
             </option>
         </select>
         <label>
-            <input name="use-recommended"  type="radio" class="inpute-radio" checked> Definity
+            <input name="use-recommended" value="Definity" type="radio" class="inpute-radio" checked> Definity
         </label>
         <label>
-            <input name="use-recommended" type="radio" class="inpute-radio" checked> Maybe
+            <input name="use-recommended" value="MayBe" type="radio" class="inpute-radio" checked> Maybe
         </label>
         <label>
-            <input name="use-recommended" type="radio" class="inpute-radio" checked> Not Sure
+            <input name="use-recommended" value="Nosure" type="radio" class="inpute-radio" checked> Not Sure
         </label>
         </div>
         <div class="form-group">
@@ -93,6 +95,6 @@
             <button type="submit" id="submit" class="submit-button">Submit</button>
         </div>
     </form>
-    
+</div>
 </body>
 </html>
