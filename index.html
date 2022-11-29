@@ -12,13 +12,20 @@
     <h1 id="title">Microverse Servey Page</h1>
     <p id="description">This sevey form helps to gather information </p>
     <form id="survey-form">
-        <input id="name" type="text" required />
-        <input id="email" type="email" required />
-        <input id="age" type="number" required />
-        
-
-
-
+        <label id="name-label">name</label>
+        <input id="name" type="text" placeholder="name" required />
+        <label id="email-label">email</label>
+        <input id="email" type="email" placeholder="example@gmail.com" required />
+        <label id="number-label">Age</label>
+        <input id="age" type="number"  min="" max="120" placeholder="Your Age" required  />
+        <select id="dropdown">
+            <option>
+                first
+            </option>
+            <option>
+                second
+            </option>
+        </select>
     </form>
     
 </body>
